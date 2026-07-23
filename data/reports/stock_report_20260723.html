@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VN Stock Daily Briefing — 23/07/2026</title>
+<style>
+:root{--bg:#f8f9fa;--card:#fff;--text:#1a1a2e;--muted:#6c757d;--border:#e0e0e0;--green:#0d9e6a;--red:#d63031;--yellow:#f39c12;--accent:#2563eb;--chart-bg:#fff}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1117;--card:#1a1d2e;--text:#e4e4e7;--muted:#9ca3af;--border:#2d3148;--green:#34d399;--red:#f87171;--yellow:#fbbf24;--accent:#60a5fa;--chart-bg:#1a1d2e}}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);max-width:1100px;margin:0 auto;padding:20px 16px;line-height:1.5}
+h1{font-size:1.5rem;font-weight:700;margin-bottom:4px}
+.subtitle{color:var(--muted);font-size:.85rem;margin-bottom:20px}
+.grid{display:grid;gap:16px;margin-bottom:20px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;overflow-x:auto}
+.card h2{font-size:1rem;font-weight:600;margin-bottom:12px}
+table{width:100%;border-collapse:collapse;font-size:.82rem;white-space:nowrap}
+th{text-align:left;padding:6px 10px;border-bottom:2px solid var(--border);color:var(--muted);font-weight:600;font-size:.75rem;text-transform:uppercase;letter-spacing:.3px}
+td{padding:7px 10px;border-bottom:1px solid var(--border)}
+tr:last-child td{border-bottom:none}
+.pos{color:var(--green);font-weight:600}
+.neg{color:var(--red);font-weight:600}
+.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:.73rem;font-weight:600}
+.badge-green{background:rgba(13,158,106,.12);color:var(--green)}
+.badge-yellow{background:rgba(243,156,18,.12);color:var(--yellow)}
+.badge-red{background:rgba(214,48,49,.12);color:var(--red)}
+.pick{display:flex;gap:12px;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--border)}
+.pick:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.pick-rank{font-size:1.6rem;font-weight:700;color:var(--accent);min-width:32px;display:flex;align-items:flex-start;padding-top:2px}
+.pick-body h3{font-size:.95rem;margin-bottom:3px}
+.pick-body p{font-size:.82rem;color:var(--muted)}
+.pick-body .price{font-size:.78rem;color:var(--muted);margin-bottom:4px}
+canvas{width:100%!important;height:280px!important}
+.footer{text-align:center;color:var(--muted);font-size:.72rem;margin-top:16px;padding-top:12px;border-top:1px solid var(--border)}
+.trend-up::before{content:"▲ ";color:var(--green)}
+.trend-down::before{content:"▼ ";color:var(--red)}
+.trend-side::before{content:"▸ ";color:var(--yellow)}
+</style>
+</head>
+<body>
+<h1>VN Stock Daily Briefing</h1>
+<p class="subtitle">Data ngày 22/07/2026 &middot; 10 mã theo dõi &middot; Phân tích 30 ngày gần nhất</p>
+
+<div class="grid">
+
+<div class="card">
+<h2>Bảng tổng hợp</h2>
+<table>
+<thead>
+<tr><th>Mã</th><th>Giá</th><th>Return 30D</th><th>Volatility</th><th>Trend</th><th>Volume</th><th>Khuyến nghị</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VIC</strong></td><td>202,100</td>
+<td class="pos">+3.11%</td><td>2.78%</td>
+<td class="trend-up">Tăng</td><td>Tăng nhẹ</td>
+<td><span class="badge badge-green">✅ Nên xem xét</span></td>
+</tr>
+<tr>
+<td><strong>VNM</strong></td><td>59,100</td>
+<td class="pos">+3.11%</td><td>1.31%</td>
+<td class="trend-side">Sideway</td><td>Tăng mạnh</td>
+<td><span class="badge badge-green">✅ Nên xem xét</span></td>
+</tr>
+<tr>
+<td><strong>MBB</strong></td><td>22,350</td>
+<td class="neg">-6.09%</td><td>1.30%</td>
+<td class="trend-side">Sideway</td><td>Tăng nhẹ</td>
+<td><span class="badge badge-green">✅ Nên xem xét</span></td>
+</tr>
+<tr>
+<td><strong>TCB</strong></td><td>29,000</td>
+<td class="neg">-6.00%</td><td>1.75%</td>
+<td class="trend-side">Sideway</td><td>Giảm nhẹ</td>
+<td><span class="badge badge-yellow">⚠️ Theo dõi</span></td>
+</tr>
+<tr>
+<td><strong>VHM</strong></td><td>126,900</td>
+<td class="neg">-8.80%</td><td>3.13%</td>
+<td class="trend-side">Sideway</td><td>Giảm nhẹ</td>
+<td><span class="badge badge-yellow">⚠️ Theo dõi</span></td>
+</tr>
+<tr>
+<td><strong>MSN</strong></td><td>63,900</td>
+<td class="neg">-10.00%</td><td>1.21%</td>
+<td class="trend-down">Giảm</td><td>Tăng mạnh</td>
+<td><span class="badge badge-yellow">⚠️ Theo dõi</span></td>
+</tr>
+<tr>
+<td><strong>HPG</strong></td><td>20,700</td>
+<td class="neg">-11.16%</td><td>1.63%</td>
+<td class="trend-down">Giảm</td><td>Tăng mạnh</td>
+<td><span class="badge badge-yellow">⚠️ Theo dõi</span></td>
+</tr>
+<tr>
+<td><strong>VCB</strong></td><td>54,050</td>
+<td class="neg">-11.52%</td><td>1.21%</td>
+<td class="trend-down">Giảm</td><td>Tăng nhẹ</td>
+<td><span class="badge badge-red">❌ Tránh / chờ</span></td>
+</tr>
+<tr>
+<td><strong>FPT</strong></td><td>64,600</td>
+<td class="neg">-11.63%</td><td>1.53%</td>
+<td class="trend-down">Giảm</td><td>Tăng mạnh</td>
+<td><span class="badge badge-red">❌ Tránh / chờ</span></td>
+</tr>
+<tr>
+<td><strong>BID</strong></td><td>35,850</td>
+<td class="neg">-12.39%</td><td>1.55%</td>
+<td class="trend-down">Giảm</td><td>Ổn định</td>
+<td><span class="badge badge-red">❌ Tránh / chờ</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="card">
+<h2>Hiệu suất 30 ngày (chuẩn hóa = 100)</h2>
+<canvas id="chart"></canvas>
+</div>
+
+<div class="card">
+<h2>Top picks hôm nay</h2>
+
+<div class="pick">
+<div class="pick-rank">1</div>
+<div class="pick-body">
+<h3>VIC — Vingroup</h3>
+<div class="price">202,100 VND &middot; Return 30D: +3.11%</div>
+<p>Duy nhất trong nhóm có xu hướng tăng rõ ràng (slope +0.3%/ngày). Dù volatility cao hơn trung bình (2.78%), VIC là mã duy nhất giữ được return dương trong bối cảnh thị trường giảm rộng. Volume ổn định cho thấy dòng tiền không rút.</p>
+</div>
+</div>
+
+<div class="pick">
+<div class="pick-rank">2</div>
+<div class="pick-body">
+<h3>VNM — Vinamilk</h3>
+<div class="price">59,100 VND &middot; Return 30D: +3.11%</div>
+<p>Cổ phiếu phòng thủ tiêu biểu — return dương +3.11% với volatility thấp nhất nhóm top (1.31%). Volume tăng mạnh 51% so với trung bình cho thấy đang thu hút dòng tiền trú ẩn khi thị trường biến động.</p>
+</div>
+</div>
+
+<div class="pick">
+<div class="pick-rank">3</div>
+<div class="pick-body">
+<h3>MBB — MB Bank</h3>
+<div class="price">22,350 VND &middot; Return 30D: -6.09%</div>
+<p>Tuy return âm, MBB có volatility rất thấp (1.30%) và trend sideway cho thấy đang tạo nền giá. Trong nhóm ngân hàng, MBB giảm ít hơn VCB (-11.5%) và BID (-12.4%), thể hiện sức chống đỡ tốt hơn.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+Tạo tự động bởi VN Stock Daily Analyst &middot; Dữ liệu chỉ mang tính tham khảo, không phải khuyến nghị đầu tư
+</div>
+
+<script>
+(function(){
+const DATA={"VIC":[[0,100],[1,99.74],[2,98.27],[3,98.98],[4,97.96],[5,104.8],[6,104.85],[7,112.14],[8,116.84],[9,117.6],[10,114.8],[11,116.33],[12,110.82],[13,112.24],[14,110.77],[15,112.4],[16,112.4],[17,112.4],[18,112.4],[19,112.6],[20,112.76],[21,113.78],[22,113.01],[23,111.73],[24,110.71],[25,113.78],[26,112.24],[27,112.24],[28,110.87],[29,103.11]],"VNM":[[0,100],[1,99.67],[2,100.85],[3,99.84],[4,99.67],[5,100],[6,99.67],[7,98.99],[8,98.66],[9,98.48],[10,98.48],[11,98.22],[12,97.87],[13,95.6],[14,96.3],[15,96.82],[16,95.78],[17,96.48],[18,96.13],[19,97.17],[20,97.17],[21,98.74],[22,96.65],[23,97.7],[24,98.05],[25,98.05],[26,102.93],[27,102.06],[28,101.88],[29,103.11]],"MBB":[[0,100],[1,100.38],[2,101.81],[3,101.39],[4,101.81],[5,102.02],[6,101.01],[7,100.21],[8,100.21],[9,100.21],[10,99.79],[11,100],[12,101.39],[13,101.81],[14,104.03],[15,103.61],[16,103.4],[17,102.23],[18,104.03],[19,105.04],[20,103.36],[21,103.57],[22,102.73],[23,103.15],[24,100.63],[25,101.47],[26,99.79],[27,95.8],[28,95.38],[29,93.91]],"TCB":[[0,100],[1,101.3],[2,102.76],[3,102.92],[4,101.94],[5,101.13],[6,100.32],[7,100.16],[8,103.89],[9,105.35],[10,108.27],[11,108.27],[12,109.56],[13,108.59],[14,111.18],[15,109.72],[16,108.91],[17,109.4],[18,109.72],[19,109.4],[20,107.46],[21,105.02],[22,104.86],[23,104.38],[24,102.11],[25,103.4],[26,101.94],[27,97.08],[28,96.6],[29,94]],"VHM":[[0,100],[1,95.99],[2,94.19],[3,94.47],[4,93.42],[5,99.94],[6,100.55],[7,107.55],[8,107.96],[9,110.45],[10,108.31],[11,112.12],[12,108.01],[13,109.09],[14,106.86],[15,108.08],[16,108.95],[17,110.74],[18,107.87],[19,107.8],[20,106.86],[21,105.64],[22,102.77],[23,101.19],[24,97.74],[25,102.62],[26,100.97],[27,98.38],[28,98.02],[29,91.2]],"MSN":[[0,100],[1,100.14],[2,101.69],[3,102.82],[4,102.11],[5,101.55],[6,101.41],[7,100.7],[8,100.7],[9,100.7],[10,100.7],[11,100.56],[12,101.55],[13,101.55],[14,102.11],[15,101.97],[16,101.13],[17,99.3],[18,96.62],[19,97.18],[20,97.04],[21,96.9],[22,95.63],[23,96.34],[24,95.77],[25,95.77],[26,95.77],[27,91.27],[28,91.41],[29,90]],"HPG":[[0,100],[1,99.57],[2,104.51],[3,103.86],[4,103],[5,101.5],[6,101.29],[7,101.29],[8,100],[9,100.86],[10,100.43],[11,100.86],[12,101.5],[13,100],[14,100.64],[15,100.43],[16,99.79],[17,99.14],[18,99.14],[19,99.57],[20,99.57],[21,98.5],[22,96.14],[23,96.57],[24,96.14],[25,95.28],[26,93.78],[27,88.41],[28,89.27],[29,88.84]],"VCB":[[0,100],[1,100],[2,100],[3,100.33],[4,100.97],[5,100],[6,100.16],[7,99.51],[8,99.51],[9,99.02],[10,98.71],[11,99.67],[12,100.65],[13,100.97],[14,102.28],[15,100.8],[16,100.65],[17,99.35],[18,99.51],[19,100],[20,99.18],[21,98.22],[22,95.61],[23,96.1],[24,96.1],[25,96.43],[26,94.96],[27,92.04],[28,92.04],[29,88.48]],"FPT":[[0,100],[1,100.55],[2,100.68],[3,100.14],[4,98.91],[5,97.95],[6,97.81],[7,96.58],[8,96.85],[9,96.85],[10,97.13],[11,96.85],[12,96.31],[13,96.03],[14,99.73],[15,99.18],[16,98.91],[17,99.86],[18,100.14],[19,98.63],[20,98.63],[21,96.58],[22,96.44],[23,96.17],[24,91.38],[25,93.02],[26,91.66],[27,91.79],[28,88.65],[29,88.37]],"BID":[[0,100],[1,99.17],[2,100.49],[3,101.22],[4,103.76],[5,103.27],[6,100.98],[7,102.54],[8,103.03],[9,101.71],[10,101.22],[11,100.73],[12,102.42],[13,102.42],[14,103.98],[15,102.79],[16,102.05],[17,99.88],[18,100.61],[19,100.98],[20,99.66],[21,99.05],[22,96.51],[23,97.24],[24,95.43],[25,94.94],[26,94.82],[27,90.42],[28,89.93],[29,87.61]]};
+const LABELS=["11/06","12/06","15/06","16/06","17/06","18/06","19/06","22/06","23/06","24/06","25/06","26/06","29/06","30/06","01/07","02/07","03/07","06/07","07/07","08/07","09/07","10/07","13/07","14/07","15/07","16/07","17/07","20/07","21/07","22/07"];
+const COLORS={"VIC":"#2563eb","VNM":"#0d9e6a","MBB":"#f59e0b","TCB":"#8b5cf6","VHM":"#ec4899","MSN":"#06b6d4","HPG":"#ef4444","VCB":"#10b981","FPT":"#f97316","BID":"#6366f1"};
+const ORDER=["VIC","VNM","MBB","TCB","VHM","MSN","HPG","VCB","FPT","BID"];
+
+const c=document.getElementById('chart');
+const ctx=c.getContext('2d');
+const dpr=window.devicePixelRatio||1;
+
+function draw(){
+const rect=c.parentElement.getBoundingClientRect();
+const W=rect.width-32;
+const H=280;
+c.width=W*dpr;c.height=H*dpr;
+c.style.width=W+'px';c.style.height=H+'px';
+ctx.scale(dpr,dpr);
+
+const pad={t:20,r:70,b:30,l:45};
+const cw=W-pad.l-pad.r;
+const ch=H-pad.t-pad.b;
+
+let allV=[];
+for(let k in DATA)DATA[k].forEach(p=>allV.push(p[1]));
+const minV=Math.floor(Math.min(...allV)/5)*5;
+const maxV=Math.ceil(Math.max(...allV)/5)*5;
+
+const isDark=window.matchMedia('(prefers-color-scheme:dark)').matches;
+ctx.fillStyle=isDark?'#1a1d2e':'#fff';
+ctx.fillRect(0,0,W,H);
+
+const gridColor=isDark?'#2d3148':'#e5e7eb';
+const textColor=isDark?'#9ca3af':'#6b7280';
+ctx.strokeStyle=gridColor;ctx.lineWidth=.5;
+ctx.font='11px -apple-system,sans-serif';ctx.fillStyle=textColor;
+const steps=5;
+for(let i=0;i<=steps;i++){
+const v=minV+(maxV-minV)*i/steps;
+const y=pad.t+ch-(v-minV)/(maxV-minV)*ch;
+ctx.beginPath();ctx.moveTo(pad.l,y);ctx.lineTo(W-pad.r,y);ctx.stroke();
+ctx.textAlign='right';ctx.fillText(v.toFixed(0),pad.l-6,y+4);
+}
+
+ctx.strokeStyle=gridColor;ctx.lineWidth=.3;
+const ref100y=pad.t+ch-(100-minV)/(maxV-minV)*ch;
+ctx.setLineDash([4,3]);ctx.beginPath();ctx.moveTo(pad.l,ref100y);ctx.lineTo(W-pad.r,ref100y);ctx.stroke();ctx.setLineDash([]);
+
+const labelStep=Math.ceil(LABELS.length/7);
+ctx.textAlign='center';ctx.fillStyle=textColor;
+for(let i=0;i<LABELS.length;i+=labelStep){
+const x=pad.l+i/(LABELS.length-1)*cw;
+ctx.fillText(LABELS[i],x,H-pad.b+18);
+}
+
+for(const ticker of ORDER){
+const pts=DATA[ticker];
+const color=COLORS[ticker];
+ctx.strokeStyle=color;ctx.lineWidth=ticker==='VIC'||ticker==='VNM'||ticker==='MBB'?2.2:1;
+ctx.globalAlpha=ticker==='VIC'||ticker==='VNM'||ticker==='MBB'?1:.4;
+ctx.beginPath();
+pts.forEach((p,i)=>{
+const x=pad.l+p[0]/(LABELS.length-1)*cw;
+const y=pad.t+ch-(p[1]-minV)/(maxV-minV)*ch;
+i===0?ctx.moveTo(x,y):ctx.lineTo(x,y);
+});
+ctx.stroke();
+const last=pts[pts.length-1];
+const lx=pad.l+last[0]/(LABELS.length-1)*cw;
+const ly=pad.t+ch-(last[1]-minV)/(maxV-minV)*ch;
+ctx.globalAlpha=1;
+ctx.font='bold 10px -apple-system,sans-serif';
+ctx.fillStyle=color;ctx.textAlign='left';
+ctx.fillText(ticker+' '+last[1].toFixed(0),lx+4,ly+3);
+}
+}
+draw();
+window.addEventListener('resize',draw);
+window.matchMedia('(prefers-color-scheme:dark)').addEventListener('change',draw);
+})();
+</script>
+</body>
+</html>
