@@ -1,0 +1,220 @@
+<title>VN Stock Daily Briefing — 24/07/2026</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg: #f8f9fa; --card: #fff; --text: #1a1a2e; --muted: #6c757d;
+    --green: #0d9488; --yellow: #d97706; --red: #dc2626;
+    --border: #e5e7eb; --accent: #2563eb; --chart-bg: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f172a; --card: #1e293b; --text: #e2e8f0; --muted: #94a3b8;
+      --green: #14b8a6; --yellow: #f59e0b; --red: #ef4444;
+      --border: #334155; --accent: #60a5fa; --chart-bg: #1e293b;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg); color: var(--text); padding: 24px; max-width: 960px; margin: 0 auto;
+    line-height: 1.5;
+  }
+  h1 { font-size: 1.5rem; margin-bottom: 4px; }
+  .subtitle { color: var(--muted); font-size: 0.85rem; margin-bottom: 20px; }
+  .section { margin-bottom: 20px; }
+  .section-title { font-size: 1.05rem; font-weight: 700; margin-bottom: 10px; border-bottom: 2px solid var(--accent); padding-bottom: 4px; display: inline-block; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  th { background: var(--card); font-weight: 600; text-align: left; padding: 8px 10px; border-bottom: 2px solid var(--border); white-space: nowrap; }
+  td { padding: 7px 10px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  tr:hover td { background: var(--card); }
+  .pos { color: var(--green); font-weight: 600; }
+  .neg { color: var(--red); font-weight: 600; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
+  .badge-top { background: #d1fae5; color: #065f46; }
+  .badge-mid { background: #fef3c7; color: #92400e; }
+  .badge-bot { background: #fee2e2; color: #991b1b; }
+  @media (prefers-color-scheme: dark) {
+    .badge-top { background: #064e3b; color: #6ee7b7; }
+    .badge-mid { background: #78350f; color: #fcd34d; }
+    .badge-bot { background: #7f1d1d; color: #fca5a5; }
+  }
+  .chart-container { background: var(--chart-bg); border: 1px solid var(--border); border-radius: 8px; padding: 16px; overflow-x: auto; }
+  canvas { width: 100% !important; height: 280px !important; }
+  .pick-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; margin-bottom: 10px; }
+  .pick-card h3 { font-size: 1rem; margin-bottom: 4px; }
+  .pick-card .price { color: var(--muted); font-size: 0.85rem; }
+  .pick-card p { font-size: 0.85rem; margin-top: 6px; }
+  .footer { text-align: center; color: var(--muted); font-size: 0.75rem; margin-top: 24px; padding-top: 12px; border-top: 1px solid var(--border); }
+  .table-wrap { overflow-x: auto; }
+  .trend-up { color: var(--green); } .trend-down { color: var(--red); } .trend-side { color: var(--yellow); }
+</style>
+
+<h1>VN Stock Daily Briefing</h1>
+<p class="subtitle">Data ngay 23/07/2026 &bull; Bao cao tao 24/07/2026 &bull; 10 ma theo doi</p>
+
+<div class="section">
+  <div class="section-title">Bang tong hop</div>
+  <div class="table-wrap">
+  <table>
+    <thead>
+      <tr><th>#</th><th>Ma</th><th>Gia</th><th>Return 30D</th><th>Volatility</th><th>Trend</th><th>Vol 7D</th><th>Khuyen nghi</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td><b>VIC</b></td><td>214,000</td><td class="pos">+9.46%</td><td>2.98%</td><td class="trend-up">&#9650; Tang</td><td class="pos">+7.0%</td><td><span class="badge badge-top">Nen xem xet</span></td></tr>
+      <tr><td>2</td><td><b>VNM</b></td><td>57,800</td><td class="pos">+1.17%</td><td>1.37%</td><td class="trend-side">&#9654; Sideway</td><td class="pos">+59.0%</td><td><span class="badge badge-top">Nen xem xet</span></td></tr>
+      <tr><td>3</td><td><b>MBB</b></td><td>22,050</td><td class="neg">-7.70%</td><td>1.31%</td><td class="trend-down">&#9660; Giam</td><td class="pos">+17.4%</td><td><span class="badge badge-top">Nen xem xet</span></td></tr>
+      <tr><td>4</td><td><b>VHM</b></td><td>132,000</td><td class="neg">-1.18%</td><td>3.14%</td><td class="trend-side">&#9654; Sideway</td><td class="neg">-12.1%</td><td><span class="badge badge-mid">Theo doi them</span></td></tr>
+      <tr><td>5</td><td><b>TCB</b></td><td>29,250</td><td class="neg">-6.40%</td><td>1.74%</td><td class="trend-down">&#9660; Giam</td><td class="neg">-1.8%</td><td><span class="badge badge-mid">Theo doi them</span></td></tr>
+      <tr><td>6</td><td><b>VCB</b></td><td>54,000</td><td class="neg">-11.61%</td><td>1.21%</td><td class="trend-down">&#9660; Giam</td><td class="pos">+25.9%</td><td><span class="badge badge-mid">Theo doi them</span></td></tr>
+      <tr><td>7</td><td><b>MSN</b></td><td>64,000</td><td class="neg">-9.99%</td><td>1.21%</td><td class="trend-down">&#9660; Giam</td><td class="pos">+31.7%</td><td><span class="badge badge-mid">Theo doi them</span></td></tr>
+      <tr><td>8</td><td><b>FPT</b></td><td>64,700</td><td class="neg">-11.97%</td><td>1.52%</td><td class="trend-down">&#9660; Giam</td><td class="pos">+22.8%</td><td><span class="badge badge-bot">Tranh / cho</span></td></tr>
+      <tr><td>9</td><td><b>BID</b></td><td>36,000</td><td class="neg">-11.29%</td><td>1.55%</td><td class="trend-down">&#9660; Giam</td><td class="pos">+5.3%</td><td><span class="badge badge-bot">Tranh / cho</span></td></tr>
+      <tr><td>10</td><td><b>HPG</b></td><td>20,800</td><td class="neg">-10.34%</td><td>1.64%</td><td class="trend-down">&#9660; Giam</td><td class="pos">+51.6%</td><td><span class="badge badge-bot">Tranh / cho</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Performance 30 ngay (normalized = 100)</div>
+  <div class="chart-container">
+    <canvas id="perfChart"></canvas>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Top picks hom nay</div>
+
+  <div class="pick-card">
+    <h3>1. VIC — Vingroup <span class="pos">+9.46%</span></h3>
+    <p class="price">214,000 VND &bull; Trend: Tang &bull; Volatility: 2.98%</p>
+    <p>La ma duy nhat co return duong manh trong 30 ngay qua. Du volatility cao hon nhom, xu huong tang ro rang voi slope +0.24%/ngay cho thay dong tien van vao. Volume tang nhe 7% — luc mua on dinh.</p>
+  </div>
+
+  <div class="pick-card">
+    <h3>2. VNM — Vinamilk <span class="pos">+1.17%</span></h3>
+    <p class="price">57,800 VND &bull; Trend: Sideway &bull; Volatility: 1.37%</p>
+    <p>Co phieu phong thu tot nhat hien tai — return duong, volatility thap nhat nhom. Volume 7 ngay cuoi tang vot 59% cho thay su quan tam tang manh. Phu hop cho nguoi muon giu an toan trong thi truong giam.</p>
+  </div>
+
+  <div class="pick-card">
+    <h3>3. MBB — MB Bank <span class="neg">-7.70%</span></h3>
+    <p class="price">22,050 VND &bull; Trend: Giam &bull; Volatility: 1.31%</p>
+    <p>Du dang giam, MBB co volatility thap nhat nhom (1.31%) — muc giam co kiem soat, khong co cu soc lon. Gia da ve vung thap, volume tang 17% — co the la co hoi tich luy neu tin vao nganh ngan hang.</p>
+  </div>
+</div>
+
+<div class="footer">
+  VN Stock Daily Analyst &bull; Du lieu tu VCI &bull; Chi mang tinh tham khao, khong phai khuyen nghi dau tu chinh thuc
+</div>
+
+<script>
+(function() {
+  const chartData = {
+    labels: ["12/06","15/06","16/06","17/06","18/06","19/06","22/06","23/06","24/06","25/06","26/06","29/06","30/06","01/07","02/07","03/07","06/07","07/07","08/07","09/07","10/07","13/07","14/07","15/07","16/07","17/07","20/07","21/07","22/07","23/07"],
+    datasets: {
+      VIC:  [100,98.6,99.2,98.2,105.1,105.1,112.4,117.1,117.9,115.1,116.6,111.1,112.5,111.0,112.7,112.7,112.7,112.7,112.9,113.1,114.1,113.3,112.1,111.0,114.1,112.5,112.5,111.2,103.4,109.5],
+      VNM:  [100,101.2,100.2,100.0,100.3,100.0,99.3,99.0,98.8,98.8,98.5,98.2,95.9,96.6,97.1,96.1,96.8,96.4,97.5,97.5,99.1,97.0,98.0,98.4,98.4,103.3,102.4,102.2,103.5,101.2],
+      MBB:  [100,101.4,101.0,101.4,101.6,100.6,99.8,99.8,99.8,99.4,99.6,101.0,101.4,103.6,103.2,103.0,101.8,103.6,104.6,103.0,103.1,102.3,102.8,100.3,101.1,99.4,95.4,95.0,93.6,92.3],
+      VHM:  [100,98.1,98.4,97.3,104.1,104.8,112.1,112.5,115.1,112.8,116.8,112.5,113.7,111.3,112.6,113.5,115.4,112.4,112.3,111.3,110.1,107.1,105.4,101.8,106.9,105.2,102.5,102.1,95.0,98.8],
+      TCB:  [100,101.4,101.6,100.6,99.8,99.0,98.9,102.6,104.0,106.9,106.9,108.2,107.2,109.8,108.3,107.5,108.0,108.3,108.0,106.1,103.7,103.5,103.0,100.8,102.1,100.6,95.8,95.4,92.8,93.6],
+      VCB:  [100,100.0,100.3,101.0,100.0,100.2,99.5,99.5,99.0,98.7,99.7,100.7,101.0,102.3,100.8,100.7,99.3,99.5,100.0,99.2,98.2,95.6,96.1,96.1,96.4,95.0,92.0,92.0,88.5,88.4],
+      MSN:  [100,101.5,102.7,101.9,101.4,101.3,100.6,100.6,100.6,100.6,100.4,101.4,101.4,101.9,101.8,101.0,99.2,96.5,97.0,96.9,96.8,95.5,96.2,95.6,95.6,95.6,91.1,91.3,89.9,90.0],
+      FPT:  [100,100.1,99.6,98.4,97.4,97.3,96.1,96.3,96.3,96.6,96.3,95.8,95.5,99.2,98.6,98.4,99.3,99.6,98.1,98.1,96.1,95.9,95.6,90.9,92.5,91.2,91.3,88.2,87.9,88.0],
+      BID:  [100,101.3,102.1,104.6,104.1,101.8,103.4,103.9,102.6,102.1,101.6,103.3,103.3,104.9,103.6,102.9,100.7,101.5,101.8,100.5,99.9,97.3,98.1,96.2,95.7,95.6,91.2,90.7,88.3,88.7],
+      HPG:  [100,104.9,104.3,103.4,101.9,101.7,101.7,100.4,101.3,100.9,101.3,101.9,100.4,101.1,100.9,100.2,99.6,99.6,100.0,100.0,98.9,96.6,97.0,96.6,95.7,94.2,88.8,89.7,89.2,89.7]
+    }
+  };
+
+  const colors = {
+    VIC: '#2563eb', VNM: '#0d9488', MBB: '#7c3aed',
+    VHM: '#d97706', TCB: '#6366f1', VCB: '#dc2626',
+    MSN: '#64748b', FPT: '#059669', BID: '#db2777', HPG: '#ea580c'
+  };
+
+  const canvas = document.getElementById('perfChart');
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+
+  function draw() {
+    const rect = canvas.parentElement.getBoundingClientRect();
+    const W = rect.width - 32;
+    const H = 280;
+    canvas.width = W * dpr;
+    canvas.height = H * dpr;
+    canvas.style.width = W + 'px';
+    canvas.style.height = H + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    ctx.fillStyle = isDark ? '#1e293b' : '#fff';
+    ctx.fillRect(0, 0, W, H);
+
+    const pad = {top: 20, right: 60, bottom: 30, left: 45};
+    const cw = W - pad.left - pad.right;
+    const ch = H - pad.top - pad.bottom;
+
+    const allVals = Object.values(chartData.datasets).flat();
+    let minV = Math.min(...allVals), maxV = Math.max(...allVals);
+    minV = Math.floor(minV / 5) * 5;
+    maxV = Math.ceil(maxV / 5) * 5;
+    const range = maxV - minV;
+
+    const n = chartData.labels.length;
+
+    ctx.strokeStyle = isDark ? '#334155' : '#e5e7eb';
+    ctx.lineWidth = 0.5;
+    ctx.fillStyle = isDark ? '#94a3b8' : '#6c757d';
+    ctx.font = '10px sans-serif';
+    ctx.textAlign = 'right';
+    for (let v = minV; v <= maxV; v += 5) {
+      const y = pad.top + ch - (v - minV) / range * ch;
+      ctx.beginPath(); ctx.moveTo(pad.left, y); ctx.lineTo(pad.left + cw, y); ctx.stroke();
+      ctx.fillText(v.toFixed(0), pad.left - 4, y + 3);
+    }
+
+    ctx.strokeStyle = isDark ? '#475569' : '#d1d5db';
+    ctx.lineWidth = 0.5;
+    const refY = pad.top + ch - (100 - minV) / range * ch;
+    ctx.setLineDash([4, 3]); ctx.beginPath(); ctx.moveTo(pad.left, refY); ctx.lineTo(pad.left + cw, refY); ctx.stroke(); ctx.setLineDash([]);
+
+    ctx.textAlign = 'center';
+    ctx.fillStyle = isDark ? '#94a3b8' : '#6c757d';
+    for (let i = 0; i < n; i += 5) {
+      const x = pad.left + i / (n - 1) * cw;
+      ctx.fillText(chartData.labels[i], x, H - 6);
+    }
+    ctx.fillText(chartData.labels[n - 1], pad.left + cw, H - 6);
+
+    const topTickers = ['VIC', 'VNM', 'MBB'];
+
+    Object.entries(chartData.datasets).forEach(([ticker, vals]) => {
+      const isTop = topTickers.includes(ticker);
+      ctx.strokeStyle = colors[ticker];
+      ctx.lineWidth = isTop ? 2 : 0.8;
+      ctx.globalAlpha = isTop ? 1 : 0.35;
+      ctx.beginPath();
+      vals.forEach((v, i) => {
+        const x = pad.left + i / (n - 1) * cw;
+        const y = pad.top + ch - (v - minV) / range * ch;
+        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+      });
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+
+      if (isTop) {
+        const lastX = pad.left + cw;
+        const lastY = pad.top + ch - (vals[vals.length - 1] - minV) / range * ch;
+        ctx.fillStyle = colors[ticker];
+        ctx.font = 'bold 10px sans-serif';
+        ctx.textAlign = 'left';
+        ctx.fillText(ticker, lastX + 4, lastY + 3);
+      }
+    });
+  }
+
+  draw();
+  window.addEventListener('resize', draw);
+})();
+</script>
